@@ -1,0 +1,5 @@
+
+User-agent:*
+Disallow:
+
+Sitemap: https://Mango-Projects.github.io/Blog/Blog/sitemap.xml
