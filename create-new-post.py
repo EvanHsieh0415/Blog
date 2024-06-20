@@ -17,7 +17,12 @@ tag:
 # {now_string}
 """
 
-# print(frontmatter)
+answer = (input("？日記類型文章 (Y/n)：") or "Y").lower()
 
-with open(f"posts/{now_string}.md", "w", encoding="utf8") as file:
+if answer == "y":
+    path = f"posts/daily/{now_string}.md"
+else:
+    f"posts/{now_string}.md"
+
+with open(f"posts/daily/{now_string}.md", "w", encoding="utf8") as file:
     file.write(frontmatter)
