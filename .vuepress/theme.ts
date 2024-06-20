@@ -26,7 +26,7 @@ export default hopeTheme({
   sidebar,
 
   // 页脚
-  footer: "默认页脚",
+  footer: "芒果是我，我是芒果",
   displayFooter: true,
 
   // 博客相关
