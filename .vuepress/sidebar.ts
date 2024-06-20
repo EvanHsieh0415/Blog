@@ -7,8 +7,30 @@ export default sidebar({
       text: "文章",
       icon: "book",
       prefix: "posts/",
+      children: [
+        {
+          text: "日記",
+          icon: "book",
+          link: "diary/",
+        },
+        {
+          text: "KubeJS",
+          icon: "book",
+          link: "kubejs/",
+        },
+        {
+          text: "倉庫",
+          icon: "database",
+          link: "storage/",
+        },
+      ],
+    },
+    {
+      text: "遊戲相關",
+      icon: "gamepad",
+      prefix: "games/",
       children: "structure",
     },
-    "intro",
+    "/intro/",
   ],
 });

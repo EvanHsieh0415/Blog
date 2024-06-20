@@ -1,4 +1,5 @@
 import { hopeTheme } from "vuepress-theme-hope";
+import { Page } from "vuepress";
 
 import navbar from "./navbar.js";
 import sidebar from "./sidebar.js";
@@ -11,11 +12,18 @@ export default hopeTheme({
     url: "https://github.com/EvanHsieh0415",
   },
 
+  locales: {
+    "/": {
+    },
+    "/en/": {
+    },
+  },
+
   iconAssets: "fontawesome-with-brands",
 
   logo: "https://avatars.githubusercontent.com/u/74277414",
 
-  repo: "vuepress-theme-hope/vuepress-theme-hope",
+  repo: "EvanHsieh0415/Blog",
 
   docsDir: "src",
 
@@ -32,12 +40,10 @@ export default hopeTheme({
   // 博客相关
   blog: {
     description: "資訊科技系大學生，熱衷於程式設計",
-    intro: "/intro.html",
+    intro: "/intro/",
     medias: {
       Discord: "https://discord.com/invite/SCAfRyAVnR",
       GitHub: "https://github.com/EvanHsieh0415",
-      // Linkedin: "https://example.com",
-      // QQ: "https://example.com",
       Twitter: "https://twitter.com/evan_mango",
       Youtube: "https://www.youtube.com/@YTMango",
     },
@@ -60,7 +66,10 @@ export default hopeTheme({
 
   // 在这里配置主题提供的插件
   plugins: {
-    blog: true,
+    blog: {
+      filter: ({ frontmatter, filePathRelative, path }: Page) =>
+        !!(frontmatter.article ?? (!!filePathRelative && !frontmatter.home && !frontmatter.exceptBar && path.startsWith("/posts/"))),
+    },
 
     // 启用之前需安装 @waline/client
     // 警告: 这是一个仅供演示的测试服务，在生产环境中请自行部署并使用自己的服务！

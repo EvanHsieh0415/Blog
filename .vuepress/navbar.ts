@@ -4,7 +4,30 @@ export default navbar([
   "/",
   {
     text: "文章",
-    icon: "pen-to-square",
-    link: "/posts/",
+    icon: "book",
+    prefix: "posts/",
+    children: [
+      {
+        text: "日記",
+        icon: "book",
+        link: "diary/",
+      },
+      {
+        text: "KubeJS",
+        icon: "book",
+        link: "kubejs/",
+      },
+      {
+        text: "倉庫",
+        icon: "database",
+        link: "storage/",
+      },
+    ],
   },
+  {
+    text: "遊戲相關",
+    icon: "gamepad",
+    link: "/games/"
+  },
+  "/intro/",
 ]);

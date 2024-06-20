@@ -2,7 +2,7 @@
   "name": "mango-blog",
   "version": "2.0.0",
   "description": "Mango's Blog",
-  "repository": "https://github.com/Mango-Projects/Blog/",
+  "repository": "https://github.com/EvanHsieh0415/Blog",
   "license": "AGPL-v3.0",
   "type": "module",
   "scripts": {

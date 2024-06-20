@@ -1,7 +1,9 @@
 ---
+title: 日記
+icon: book
 exceptBar: true
 ---
 
-# 文章列表
+# 目錄
 
 <Catalog/>
