@@ -69,6 +69,21 @@ export default hopeTheme({
     blog: {
       filter: ({ frontmatter, filePathRelative, path }: Page) =>
         !!(frontmatter.article ?? (!!filePathRelative && !frontmatter.home && !frontmatter.exceptBar && path.startsWith("/posts/"))),
+      excerptLength: 100,
+    },
+
+    shiki: {
+      lineNumbers: true,
+      langs: [
+        "js",
+        "json",
+        "md",
+        "bash",
+        "php",
+        "cs"
+      ],
+      theme: "one-dark-pro",
+      whitespace: "boundary"
     },
 
     // 启用之前需安装 @waline/client

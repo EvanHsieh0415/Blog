@@ -1,4 +1,7 @@
 ---
+title: MySQL 相關程式碼
+category:
+  - 倉庫
 tags:
   - MySQL
   - C#

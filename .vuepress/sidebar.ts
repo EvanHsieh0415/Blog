@@ -16,7 +16,14 @@ export default sidebar({
         {
           text: "KubeJS",
           icon: "book",
+          prefix: "kubejs/",
           link: "kubejs/",
+          children: [
+            "links/",
+            "notes/",
+            "snippets/",
+            "tips-and-tricks/",
+          ]
         },
         {
           text: "倉庫",
