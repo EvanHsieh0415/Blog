@@ -13,11 +13,6 @@ export default navbar([
         link: "diary/",
       },
       {
-        text: "KubeJS",
-        icon: "book",
-        link: "kubejs/",
-      },
-      {
         text: "倉庫",
         icon: "database",
         link: "storage/",

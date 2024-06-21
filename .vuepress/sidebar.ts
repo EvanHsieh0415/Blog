@@ -14,18 +14,6 @@ export default sidebar({
           link: "diary/",
         },
         {
-          text: "KubeJS",
-          icon: "book",
-          prefix: "kubejs/",
-          link: "kubejs/",
-          children: [
-            "links/",
-            "notes/",
-            "snippets/",
-            "tips-and-tricks/",
-          ]
-        },
-        {
           text: "倉庫",
           icon: "database",
           link: "storage/",
